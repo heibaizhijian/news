@@ -30,22 +30,22 @@ platforms:
     name: "百度热搜"
   - id: "wallstreetcn-hot"
     name: "华尔街见闻"
-  - id: "thepaper"
-    name: "澎湃新闻"
-  - id: "bilibili-hot-search"
-    name: "bilibili 热搜"
+ # - id: "thepaper"
+#    name: "澎湃新闻"
+#  - id: "bilibili-hot-search"
+ #   name: "bilibili 热搜"
   - id: "cls-hot"
     name: "财联社热门"
-  - id: "ifeng"
-    name: "凤凰网"
-  - id: "tieba"
-    name: "贴吧"
+#  - id: "ifeng"
+ #   name: "凤凰网"
+#  - id: "tieba"
+ #   name: "贴吧"
   - id: "weibo"
     name: "微博"
   - id: "douyin"
     name: "抖音"
-  - id: "zhihu"
-    name: "知乎"
+ # - id: "zhihu"
+  #  name: "知乎"
 
 
 # ===============================================================
@@ -84,16 +84,18 @@ rss:
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
       # max_age_days: 1               # 示例：只推送1天内的文章
+      enabled: false
 
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
       url: "http://www.ruanyifeng.com/blog/atom.xml"
       # max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
+      enabled: false
     
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
-      enabled: false                  # 禁用
+      enabled: false              
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -128,7 +130,7 @@ report:
                                       # platform: 按平台/来源分组显示
   rank_threshold: 5                   # 排名高亮阈值
   sort_by_position_first: false       # true=按配置位置排序，false=按热点条数排序
-  max_news_per_keyword: 0             # 每个关键词最大显示数量（0=不限制）
+  max_news_per_keyword: 5             # 每个关键词最大显示数量（0=不限制）
   reverse_content_order: false        # false=热点词汇统计在前，true=新增热点新闻在前
 
 
